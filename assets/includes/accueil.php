@@ -48,17 +48,18 @@
                     <div class="modal-body">
                     <div class="formulaire-contact-inscrpition">
 
-                    <form method="POST" action="assets/includes/insert.php" onsubmit="return sendData();">
+                    <form method="POST"  onsubmit="return sendData();">
                     <!-- <label for="nom">role :</label>
                     <input type="text" name="roles" id="role"required> -->
                     <label for="nom">Nom :</label>
-                    <input type="text" name="nom" id="name"required>
+                    <input type="text" name="nom" id="nom"required>
                     <label for="prenom">Prénom :</label>
                     <input type="text" name="prenom" id="prenom" required>
                     <label for="mail">Mail :</label>
-                    <input type="email" name="mail" id="mail" required>
+                    <input type="mail" name="email" id="email" required>
                     <label for="mdp">Mot de passe :</label>
-                    <input type="password" name="mdp" id="mdp"required>
+                    <input type="password" name="mdp" id="mdp"required  passwordrules="required: upper; required: lower; 
+                 minlength: 8;">
                     <input type="submit" name="submit_form" value="S'inscrire" class="button-inscription">
                     </form>
                     <div id="res" ></div>
@@ -123,7 +124,7 @@
                         </div>
                         
                         <div class="button-inscription">
-                            <button type="submit">Connexion</button>
+                            <button type="submit" class="button-inscription">Connexion</button>
                         </div>
                         </form>
                 </div>

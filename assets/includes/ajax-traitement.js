@@ -1,20 +1,24 @@
+
+
 function sendData()
 {
-  var name = document.getElementById("nom").value;
+ console.log('je commence')
+
+  var nom = document.getElementById("nom").value;
   var prenom = document.getElementById("prenom").value;
-  var name = document.getElementById("mail").value;
+  var email = document.getElementById("email").value;
   var mdp = document.getElementById("mdp").value;
   $.ajax({
     type: 'post',
-    url: 'insert.php',
+    url: 'assets/includes/insert.php',
     data: {
-      name:name,
+      nom:nom,
       prenom:prenom,
-      mail:mail,
+      email:email,
       mdp:mdp,
     },
     success: function (response) {
-      $('#res').html("Vos données seront sauvegardées");
+      $('#res').html(response);
     }
   });
     

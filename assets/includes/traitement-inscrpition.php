@@ -14,9 +14,9 @@ try{
 
 if(isset($_POST['mail'],$_POST['mdp'])){//l'utilisateur à cliqué sur "S'inscrire", on demande donc si les champs sont défini avec "isset"
     if(empty($_POST['mail'])){//le champ pseudo est vide, on arrête l'exécution du script et on affiche un message d'erreur
-        echo "Le champ Pseudo est vide.";
+        echo "Le champ mail est vide.";
 
-    } elseif(strlen($_POST['mail'])){//le pseudo est trop long, il dépasse 25 caractères
+    } elseif(strlen($_POST['mail'])){
         echo "entré un mail.";
     } elseif(empty($_POST['mdp'])){//le champ mot de passe est vide
         echo "Le champ Mot de passe est vide.";
@@ -28,7 +28,7 @@ if(isset($_POST['mail'],$_POST['mdp'])){//l'utilisateur à cliqué sur "S'inscri
             echo "Une erreur s'est produite: ".mysqli_error($mysqli);
         } else {
             echo "Vous êtes inscrit avec succès!";
-            header('Location: index.php');
+            // header('Location: index.php');
             
             
             
