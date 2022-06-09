@@ -1,3 +1,8 @@
+<?php 
+  session_start();
+ 
+?> 
+
 <?php include "assets/includes/connexionbdd.php";?>
 
 <!DOCTYPE html>
@@ -29,6 +34,7 @@
     </head>
 
     <body>
+    <?php echo "Vous êtes connecté en tant que ".$_SESSION['nom'];?>
     <?php include "assets/includes/navbar.php";?>
     <?php include "assets/includes/accueil.php";?>
     <?php include "assets/includes/footer.php";?>
@@ -36,4 +42,5 @@
     </body>
     <script src="assets/includes/blur.js"></script>
     <script src="assets/includes/ajax-traitement.js"></script>
+    <script src="assets/includes/ajax-connexion.js"></script>
 </html>
