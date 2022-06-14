@@ -37,9 +37,8 @@ if(isset( $_POST['email']) && isset( $_POST['mdp']) && isset( $_POST['prenom'])&
       // vérifier si la requête d'insertion a réussi
       
       if($exec){
-        echo "email";
-        echo $email;
-        echo 'Données insérées';
+
+        echo 'Félicitation vous êtes inscrit.';
 
       }else{
         echo "Échec de l'opération d'insertion";

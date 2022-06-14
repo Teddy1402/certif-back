@@ -27,20 +27,28 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <script src="jquery-3.6.0.min.js"></script>
 <link rel="stylesheet" href="assets/css/style.css">
+<link rel="stylesheet" href="style2.css">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <script src="https://cdn.lordicon.com/xdjxvujz.js"></script>
+
 <link href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100;0,200;0,300;0,500;0,600;0,700;0,800;1,400;1,500&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap" rel="stylesheet"> 
     </head>
 
     <body>
-    <?php echo "Vous êtes connecté en tant que ".$_SESSION['nom'];?>
+ 
+  
     <?php include "assets/includes/navbar.php";?>
     <?php include "assets/includes/accueil.php";?>
-    <?php include "assets/includes/footer.php";?>
+    
         
     </body>
     <script src="assets/includes/blur.js"></script>
     <script src="assets/includes/ajax-traitement.js"></script>
     <script src="assets/includes/ajax-connexion.js"></script>
+    <script src="assets/includes/ajax-ajout.js"></script>
+    <script src="assets/includes/input.js"></script>
+    <!-- <script src="jquery-3.6.0.min.js"></script> -->
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 </html>
