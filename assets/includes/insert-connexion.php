@@ -20,7 +20,8 @@
                             $_SESSION['connecte'] = 1;
                             $_SESSION['id'] = $result['id_utilisateurs'];
                             $_SESSION['nom'] =  $result['nom_utilisateurs'];
-                            
+                            $_SESSION['prenom'] =  $result['prenom_utilisateurs'];
+                                       
                             echo "connexion réussis";
                             // header("Location:index.php");
                             
