@@ -235,6 +235,10 @@
                     </a></li>
             </ul>
         </div>
+        <div class="information-footer">
+            <h2>Information : </h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur voluptate earum dolorum omnis tenetur. Earum, placeat exercitationem obcaecati rem dolores, consequatur iusto natus sed, delectus debitis distinctio vero molestias aliquam.</p>
+        </div>
         <div class="reseaux-bas">
             <ul>
                 <li><i class="fa-brands fa-facebook-f"></i></li>
@@ -374,11 +378,29 @@
 
                             <?php include 'assets/includes/connexionbdd.php';
 
-                                        //on inclut notre fichier de connection 
+                                       
+
+                                        if ($_SESSION['role']==1){
+                                            $sqlsupp = "SELECT * FROM projets  ";
+                                            foreach ($db->query($sqlsupp) as $supp){
+                                                echo '
+
+                                                <tr>';
+                                                echo'<td>'.$supp['id_projets'] . '</td>
+                                                ';
+                                                echo'<td>' .$supp['nom_projets'] . '</td>
+                                                ';
+                                                echo'<td>' .$supp['client_projets'] . '</td>';
+                                                echo '<td>';
+                                                //echo '<a href="delete.php?id=' . $supp['id_projets'] . '"data-bs-toggle="modal" data-bs-target="#myModalouinon">OUIII</a>';
+                                               //echo '<a  href="' . $supp['id_projets'] . '"data-bs-toggle="modal" data-bs-target="#myModalouinon></a>';
+                                                echo '<a class="btn" href="delete.php?id=' . $supp['id_projets'] . '"><i class="fas fa-pen lire"></i>Supprimer</a>';// un autre td pour le bouton d'edition
+                                                echo '</td>';
+                                                echo '</tr>';
+                                            }
+                                        }
+                                        else {
                                          $id= $_SESSION['id'];
-                                        // if(!empty($_GET['id'])){ 
-                                          //  $id=$_REQUEST['id']; }
-                                        //on se connecte à la base 
                                         $sqlsupp = "SELECT * FROM projets WHERE id_utilisateurs='$id'";
                                         //on formule notre requete 
                                         foreach ($db->query($sqlsupp) as $supp) {
@@ -397,7 +419,8 @@
                                         echo '<a class="btn" href="delete.php?id=' . $supp['id_projets'] . '"><i class="fas fa-pen lire"></i>Supprimer</a>';// un autre td pour le bouton d'edition
                                         echo '</td>';
                                         echo '</tr>';
-                                        
+                                    
+                                    }
                                         }
                                         ?>
                         </tbody>

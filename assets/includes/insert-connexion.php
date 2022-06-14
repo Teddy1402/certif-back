@@ -21,6 +21,7 @@
                             $_SESSION['id'] = $result['id_utilisateurs'];
                             $_SESSION['nom'] =  $result['nom_utilisateurs'];
                             $_SESSION['prenom'] =  $result['prenom_utilisateurs'];
+                            $_SESSION['role'] =  $result['id_roles'];
                                        
                             echo "connexion réussis";
                             // header("Location:index.php");

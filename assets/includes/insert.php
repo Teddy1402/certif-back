@@ -31,7 +31,7 @@ if(isset( $_POST['email']) && isset( $_POST['mdp']) && isset( $_POST['prenom'])&
       $mdp = password_hash( $mdp, PASSWORD_DEFAULT);
       
       
-      $sql = "INSERT INTO `utilisateurs`(`nom_utilisateurs`, `prenom_utilisateurs`, `mail_utilisateurs`, `password_utilisateurs`) VALUES (:nom_utilisateurs,:prenom_utilisateurs,:mail_utilisateurs,:password_utilisateurs)";
+      $sql = "INSERT INTO `utilisateurs`(`nom_utilisateurs`, `prenom_utilisateurs`, `mail_utilisateurs`, `password_utilisateurs`, `id_roles`) VALUES (:nom_utilisateurs,:prenom_utilisateurs,:mail_utilisateurs,:password_utilisateurs,'2')";
       $res = $db->prepare($sql);
       $exec = $res->execute(array(":nom_utilisateurs"=>$nom,":prenom_utilisateurs"=>$prenom,":mail_utilisateurs"=>$email,":password_utilisateurs"=>$mdp));
       // vérifier si la requête d'insertion a réussi
