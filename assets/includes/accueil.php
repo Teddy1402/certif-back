@@ -8,12 +8,10 @@
     <div class="titre-accueil">
         <ul>
             <li>
-                <h1>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</h1>
+                <h1>Bienvenue sur Certif Web, Site de référencement de projet.</h1>
             </li>
             <li>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo explicabo et ex consectetur id, ea
-                    atque quam ipsum provident qui consequatur ratione porro error sequi nulla dicta ab adipisci
-                    veritatis.</p>
+                <p>Tout le monde peux y poster son projet, suffit de s'inscire et partages nous tes meilleurs projets.</p>
             </li>
         </ul>
     </div>
@@ -220,7 +218,7 @@
 <div class="test" style="color:#fff">Lorem </div>
 
 <div class="bas-tb">
-    <div class="titre-bas">Certif</div>
+    <div class="titre-bas">Certif Web</div>
     <div class="container-bas">
         <div class="nav-bas">
             <ul>

@@ -24,13 +24,13 @@
                             $_SESSION['role'] =  $result['id_roles'];
                                        
                             echo "connexion réussis";
-                            // header("Location:index.php");
+                           
                             
                         } else {
-                            echo "Votre adresse email2 ou mot de passe est incorrect !";
+                            echo "Votre adresse email ou mot de passe est incorrect !";
                         }
                     } else {
-                        echo "Votre adresse email2 ou mot de passe est incorrect !";
+                        echo "Votre adresse email ou mot de passe est incorrect !";
                     }
             }else{
                 echo "Vous n'avez pas rempli tout les champs !";

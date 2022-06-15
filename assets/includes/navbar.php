@@ -4,7 +4,7 @@
         <label for="mobile">☰</label>
         <input type="checkbox" id="mobile" role="button">
           <ul>
-          <li><a href="index.php" style="font-size:21px; color:#08a88a; margin:15px">Certif</a></li>
+          <li><a href="index.php" style="font-size:21px; color:#08a88a; margin:15px">Certif Web</a></li>
           <li>            <div class="titre-bg-film">
                     <!-- <h3>Bienvenue</h3>
                     <p> <?php 
@@ -92,7 +92,8 @@
 
         <!-- Modal footer -->
         <div class="modal-footer">
-            <!-- Message bien inscrit -->
+        <a href="#"data-bs-toggle="modal"
+    data-bs-target="#myModal2">Se connecter</a>
         </div>
 
     </div>
